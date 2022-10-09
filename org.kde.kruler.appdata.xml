@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>org.kde.kruler.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>KRuler</name>
+  <name xml:lang="ca">KRuler</name>
+  <name xml:lang="ca-valencia">KRuler</name>
+  <name xml:lang="cs">KRuler</name>
+  <name xml:lang="da">KRuler</name>
+  <name xml:lang="de">KRuler</name>
+  <name xml:lang="el">KRuler</name>
+  <name xml:lang="en-GB">KRuler</name>
+  <name xml:lang="es">KRuler</name>
+  <name xml:lang="et">KRuler</name>
+  <name xml:lang="eu">KRuler</name>
+  <name xml:lang="fi">KRuler</name>
+  <name xml:lang="fr">KRuler</name>
+  <name xml:lang="gl">KRuler</name>
+  <name xml:lang="ia">KRuler</name>
+  <name xml:lang="id">KRuler</name>
+  <name xml:lang="it">KRuler</name>
+  <name xml:lang="ko">KRuler</name>
+  <name xml:lang="nl">KRuler</name>
+  <name xml:lang="nn">KRuler</name>
+  <name xml:lang="pl">KLinijka</name>
+  <name xml:lang="pt">KRuler</name>
+  <name xml:lang="pt-BR">KRuler</name>
+  <name xml:lang="ru">KRuler</name>
+  <name xml:lang="sk">KRuler</name>
+  <name xml:lang="sl">KRuler</name>
+  <name xml:lang="sr">К‑лењир</name>
+  <name xml:lang="sr-Latn">K‑lenjir</name>
+  <name xml:lang="sr-ijekavian">К‑лењир</name>
+  <name xml:lang="sr-ijekavianlatin">K‑lenjir</name>
+  <name xml:lang="sv">Kruler</name>
+  <name xml:lang="tr">KRuler</name>
+  <name xml:lang="uk">KRuler</name>
+  <name xml:lang="x-test">xxKRulerxx</name>
+  <name xml:lang="zh-CN">直尺</name>
+  <name xml:lang="zh-TW">KRuler</name>
+  <summary>Screen Ruler</summary>
+  <summary xml:lang="ca">Regle de la pantalla</summary>
+  <summary xml:lang="ca-valencia">Regle de la pantalla</summary>
+  <summary xml:lang="cs">Obrazovkové pravítko</summary>
+  <summary xml:lang="da">Skærmlineal</summary>
+  <summary xml:lang="de">Bildschirmlineal</summary>
+  <summary xml:lang="el">Κανόνας οθόνης</summary>
+  <summary xml:lang="en-GB">Screen Ruler</summary>
+  <summary xml:lang="es">Regla para la pantalla</summary>
+  <summary xml:lang="et">Ekraani joonlaud</summary>
+  <summary xml:lang="eu">Pantailako erregela</summary>
+  <summary xml:lang="fi">Näyttöviivain</summary>
+  <summary xml:lang="fr">Règle d'écran</summary>
+  <summary xml:lang="gl">Regra de pantalla</summary>
+  <summary xml:lang="ia">Regula de schermo</summary>
+  <summary xml:lang="id">Penggaris Layar</summary>
+  <summary xml:lang="it">Righello per lo schermo</summary>
+  <summary xml:lang="ko">화면 자</summary>
+  <summary xml:lang="nl">Schermliniaal</summary>
+  <summary xml:lang="nn">Skjermlinjal</summary>
+  <summary xml:lang="pl">Linijka ekranowa</summary>
+  <summary xml:lang="pt">Régua do Ecrã</summary>
+  <summary xml:lang="pt-BR">Régua de tela</summary>
+  <summary xml:lang="ru">Экранная линейка</summary>
+  <summary xml:lang="sk">Pravítko obrazovky</summary>
+  <summary xml:lang="sl">Zaslonsko ravnilo</summary>
+  <summary xml:lang="sr">Екрански лењир</summary>
+  <summary xml:lang="sr-Latn">Ekranski lenjir</summary>
+  <summary xml:lang="sr-ijekavian">Екрански лењир</summary>
+  <summary xml:lang="sr-ijekavianlatin">Ekranski lenjir</summary>
+  <summary xml:lang="sv">Skärmlinjal</summary>
+  <summary xml:lang="tr">Ekran Cetveli</summary>
+  <summary xml:lang="uk">Екранна лінійка</summary>
+  <summary xml:lang="x-test">xxScreen Rulerxx</summary>
+  <summary xml:lang="zh-CN">屏幕标尺</summary>
+  <summary xml:lang="zh-TW">螢幕尺規</summary>
+  <description>
+    <p>KRuler is an on-screen ruler for measuring pixels. Position the 0 at your starting point and measure the precise pixel distance between the starting point and your cursor.</p>
+    <p xml:lang="ca">El KRuler és un regle a la pantalla que permet mesurar píxels. Situeu el 0 al punt d'inici i mesureu la distància precisa en píxels entre el punt d'inici i el cursor.</p>
+    <p xml:lang="ca-valencia">El KRuler és un regle a la pantalla que permet mesurar píxels. Situeu el 0 al punt d'inici i mesureu la distància precisa en píxels entre el punt d'inici i el cursor.</p>
+    <p xml:lang="da">KRuler er en lineal på skærmen til at måle pixel. Placer 0 ved dit startpunkt og mål den præcise pixelafstand mellem startpunktet og din markør.</p>
+    <p xml:lang="de">KRuler ist ein Bildschirmlineal zu Messen von Pixeln. Setzen Sie den Ursprung des Lineals auf den Startpunkt und messen Sie dann den genauen Abstand zum Cursor.</p>
+    <p xml:lang="el">Το KRuler είναι ένας κανόνας οθόνης για τη μέτρηση εικονοστοιχείων. Τοποθετείτε το 0 στο αρχικό σημείο της επιλογής σας και μετράτε με ακρίβεια την απόσταση ανάμεσα στο αρχικό σημείο και το δρομέα.</p>
+    <p xml:lang="en-GB">KRuler is an on-screen ruler for measuring pixels. Position the 0 at your starting point and measure the precise pixel distance between the starting point and your cursor.</p>
+    <p xml:lang="es">KRuler es una regla para la pantalla que permite medir píxeles. Sitúe el 0 en el punto de inicio y mida con precisión la distancia en píxeles entre el punto de inicio y el cursor.</p>
+    <p xml:lang="et">KRuler on ekraani joonlaud pikslite ülemõõtmiseks. Paiguta 0 sinna, kust soovid alustada, ja mõõda täpne vahemaa pikslites nullpunktist kursorini.</p>
+    <p xml:lang="eu">KRuler pantailako erregela bat da, pixelak neurtzeko erabilia. Kokatu 0 zure abiapuntuan eta neurtu honen eta kurtsorearen arteko pixel-tartea zehaztasunez.</p>
+    <p xml:lang="fi">KRuler on kuvapisteiden mittaamiseen tarkoitettu näyttöviivain. Sijoita 0 alkupisteen kohdalle ja mittaa sen ja osoittimen välinen etäisyys kuvapisteinä.</p>
+    <p xml:lang="fr">KRuler est une règle d'écran permettant de mesurer des pixels. Positionnez le 0 sur le point de départ pour mesurer la distance précise entre le point de départ et votre curseur.</p>
+    <p xml:lang="gl">KRuler é unha regra de pantalla para medir píxeles. Coloque o 0 no punto inicial e mida a distancia en píxeles precisa do punto inicial ao cursor.</p>
+    <p xml:lang="ia">KRuler es un regula de schermo per mesurar pixeles. Tu positiona le 0 a tu puncto initial e mesura le distantia de pixel precise intra le puncto initial e tu cursor.</p>
+    <p xml:lang="id">KRuler adalah sebuah penggaris pada layar untuk mengukur pixel. Posisi 0 di titik pemulaian dan mengukur jarak presisi pixel antara titik pemulaian dan kursor Anda.</p>
+    <p xml:lang="it">KRuler è un righello a schermo che misura i pixel. Posiziona lo 0 nel punto iniziale e misura la distanza precisa in pixel tra il punto iniziale e il puntatore del mouse.</p>
+    <p xml:lang="ko">KRuler는 픽셀을 측정하는 화면 자입니다. 시작 지점을 영점으로 설정한 다음 시작 지점과 커서 사이의 거리를 픽셀 단위로 잽니다.</p>
+    <p xml:lang="nl">KRuler is een schermliniaal voor het meten van pixels. Positioneer de 0 aan uw beginpunt en meet de precieze pixelafstand tussen het beginpunt en uw cursor.</p>
+    <p xml:lang="nn">KRuler er ein skjermlinjal for måling av pikselavstandar. Plasser 0-merket der du vil måla frå og mål den nøyaktige pikselavstanden frå nullpunktet til peikaren.</p>
+    <p xml:lang="pl">KLinijka jest ekranową linijką do mierzenia pikseli. Umieść miejsce 0 na punkcie początkowym i mierz precyzyjnie odległość pomiędzy punktem początkowym i twoim wskaźnikiem.</p>
+    <p xml:lang="pt">O KRuler é uma régua no ecrã para medir pontos (pixels). Posicione o 0 (zero) no seu ponto inicial e meça a distância exacta em pixels entre o ponto inicial e o seu cursor.</p>
+    <p xml:lang="pt-BR">KRuler é uma régua de tela para medir pontos (pixels). Posicione o 0 (zero) no seu ponto inicial e meça a distância exata em pixels entre o ponto inicial e o seu cursor.</p>
+    <p xml:lang="ru">KRuler — это экранная линейка для измерения расстояния между точками. Расположите нулевую отметку линейки в исходной точке и измерьте расстояние в пикселах от этой точки до курсора.</p>
+    <p xml:lang="sk">KRuler je pravítko na obrazovke na meranie pixelov. Poloha na 0 pri vašom začiatočnom bode a meranie presnej bodovej vzdialenosti medzi počiatočným bodom a vašim kurzorom.</p>
+    <p xml:lang="sl">KRuler je zaslonsko ravnilo za merjenje slikovnih točk. Z njim lahko izmerite natančno razdaljo med izbrano točko in trenutnim položajem vaše miškine kazalke.</p>
+    <p xml:lang="sr">К‑лењир је екрански лењир за мерење пиксела. Поставите 0 у жељену почетну тачку и измерите тачно пикселско растојање између те тачке и показивача.</p>
+    <p xml:lang="sr-Latn">K‑lenjir je ekranski lenjir za merenje piksela. Postavite 0 u željenu početnu tačku i izmerite tačno pikselsko rastojanje između te tačke i pokazivača.</p>
+    <p xml:lang="sr-ijekavian">К‑лењир је екрански лењир за мерење пиксела. Поставите 0 у жељену почетну тачку и измерите тачно пикселско растојање између те тачке и показивача.</p>
+    <p xml:lang="sr-ijekavianlatin">K‑lenjir je ekranski lenjir za merenje piksela. Postavite 0 u željenu početnu tačku i izmerite tačno pikselsko rastojanje između te tačke i pokazivača.</p>
+    <p xml:lang="sv">Kruler är en skärmlinjal för att mäta bildpunkter. Placera nollan på startpunkten och mät det exakta avståndet i bildpunkter mellan startpunkten och pekaren.</p>
+    <p xml:lang="tr">KRuler, pikselleri ölçmek için ekran üstü bir cetveltir. 0'ı başlangıç noktanızda konumlandırın ve başlangıç noktası ile imleciniz arasındaki kesin piksel mesafesini ölçün.</p>
+    <p xml:lang="uk">KRuler — екранна лінійка для вимірювання відстаней у пікселях. Розташуйте нульову позначку у початковій точці вимірювання і виміряйте відстань між початковою точкою та вказівником миші.</p>
+    <p xml:lang="x-test">xxKRuler is an on-screen ruler for measuring pixels. Position the 0 at your starting point and measure the precise pixel distance between the starting point and your cursor.xx</p>
+    <p xml:lang="zh-CN">直尺是测量像素的屏幕标尺。将 0 放置在测量起点并测量起点和鼠标之间的精确像素距离。</p>
+    <p xml:lang="zh-TW">KRuler 是一個用以測量像素的，在螢幕上顯示的直尺。在您的起始點標記為 0 並測量出您的起始點到游標的精確像素距離。</p>
+  </description>
+  <url type="homepage">https://www.kde.org/applications/graphics/kruler/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?product=kruler</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=kruler&amp;source=appdata</url>
+  <provides>
+    <binary>kruler</binary>
+  </provides>
+  <project_group>KDE</project_group>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/kruler/kruler.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="21.08.0" date="2021-08-12"/>
+    <release version="21.04.3" date="2021-07-08"/>
+    <release version="21.04.2" date="2021-06-10"/>
+    <release version="21.04.1" date="2021-05-13"/>
+  </releases>
+</component>

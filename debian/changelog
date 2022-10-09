@@ -1,0 +1,754 @@
+kruler (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 16:25:08 +0900
+
+kruler (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Tue, 27 Apr 2021 18:00:06 +0900
+
+kruler (4:20.12.0-1) unstable; urgency=medium
+
+  * New upstream release (20.12.0).
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Bump debhelper compatibility level to 13.
+  * Refresh upstream metadata.
+  * Update project homepage.
+  * Removed Eshat Cakar, Maximiliano Curia from the uploaders, thanks
+    for your work on the package!
+  * Added myself to the uploaders.
+  * Build with hardening=+all build hardening flag.
+  * Borrow minimal upstream signing key from k3b.
+  * Drop kde-l10n migration rules, not needed anymore after 2 stable releases.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 25 Dec 2020 23:41:17 +0100
+
+kruler (4:20.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update watch file to the new release-service location.
+  * Update the build dependencies according to the upstream build system:
+    - bump cmake to 3.0
+    - bump Qt packages to 5.11.0
+    - bump KF packages to 5.30.0
+    - explicitly add gettext
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Switch from dhmk to the dh sequencer:
+    - invoke the dh sequencer using the kf5 addon
+    - manually force the generation of the substvars for the kde-l10n breaks
+  * Bump the debhelper compatibility to 12:
+    - switch the debhelper build dependency to debhelper-compat 12
+    - remove debian/compat
+  * Add the configuration for the CI on salsa.
+  * Add Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0, no changes required.
+  * Use https for Format in copyright.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 30 Jul 2020 21:51:34 +0200
+
+kruler (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * New upstream release.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will
+    drop translations.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Simplify watch file, and switch it to https.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 02 Dec 2017 16:32:18 +0100
+
+kruler (4:17.08.1-1) experimental; urgency=medium
+
+  * New upstream release (17.08.1)
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 12 Sep 2017 22:41:21 +0200
+
+kruler (4:17.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 05 Sep 2017 14:02:55 +0000
+
+kruler (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:39:16 +0000
+
+kruler (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:23:34 +0000
+
+kruler (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:23:10 +0000
+
+kruler (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:23:30 +0000
+
+kruler (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:05:40 +0000
+
+kruler (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:50:01 +0000
+
+kruler (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 17:01:28 +0000
+
+kruler (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:22:17 +0000
+
+kruler (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:30:23 +0000
+
+kruler (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:55:11 +0000
+
+kruler (4:16.08.2-1) unstable; urgency=medium
+
+  [ Maximiliano Curia ]
+  * New upstream release (16.08.2)
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 09:29:54 +0200
+
+kruler (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:40:54 +0000
+
+kruler (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:07:32 +0000
+
+kruler (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 17 Aug 2016 11:49:41 +0000
+
+kruler (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:37:41 +0000
+
+kruler (4:16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 08 Jul 2016 12:16:30 +0000
+
+kruler (4:16.04.1-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 22 May 2016 10:29:56 +0200
+
+kruler (4:15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:22:26 +0100
+
+kruler (4:15.08.3-1) unstable; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:39:32 +0100
+
+kruler (4:15.08.0-2) unstable; urgency=medium
+
+  * Add pkg-config build dep.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 12 Sep 2015 10:41:11 +0200
+
+kruler (4:15.08.0-1) unstable; urgency=medium
+
+  * New upstream release (15.04.0).
+  * New upstream release (15.08.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 10 Sep 2015 08:39:12 +0200
+
+kruler (4:15.08.0-0ubuntu1) wily; urgency=medium
+
+  * new upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Wed, 26 Aug 2015 17:36:33 +0100
+
+kruler (4:15.07.90-0ubuntu1) wily; urgency=medium
+
+  * new upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Aug 2015 11:11:20 +0100
+
+kruler (4:15.04.2-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release
+  * New upstream release
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Jun 2015 19:20:15 +0200
+
+kruler (4:14.12.3-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 13 Mar 2015 14:06:26 -0700
+
+kruler (4:14.12.2-1) experimental; urgency=medium
+
+  * Prepare Debian release.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 19 Feb 2015 12:01:01 +0100
+
+kruler (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 09:00:10 -0800
+
+kruler (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove kdelibs5-dev depend version as there was not a new release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 16:28:54 +0100
+
+kruler (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  * Initial release for KDE applications 14.12 series
+   - Change maintainer to Debian/Kubuntu
+   - Fix Watch file applications locations
+   - Fix VCS for new kde-applications location
+  * Debian merge, no remaining changes.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Sat, 29 Nov 2014 19:49:01 +0000
+
+kruler (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 06:07:07 -0700
+
+kruler (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 17:32:08 +0200
+
+kruler (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 13:22:09 +0200
+
+kruler (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 17:06:49 +0200
+
+kruler (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 18:32:39 +0200
+
+kruler (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 23:25:40 +0200
+
+kruler (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Merge with Debian, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Jun 2014 10:41:58 +0100
+
+kruler (4:4.12.3-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 28 Apr 2014 12:25:07 +0200
+
+kruler (4:4.12.3-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Mar 2014 00:05:46 +0100
+
+kruler (4:4.12.2-1) experimental; urgency=medium
+
+  * Bump Standards-Version to 3.9.5, no changes needed.
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:18 +0100
+
+kruler (4:4.11.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update build dependencies.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 12:38:17 +0100
+
+kruler (4:4.11.2-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 08 Oct 2013 12:14:54 +0200
+
+kruler (4:4.10.5-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 16:37:57 +0200
+
+kruler (4:4.10.4-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump debhelper build-dep and compat to 9.
+  * Bump Standards-Version to 3.9.4.
+  * Update vcs fields.
+  * Add myself to uploaders.
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 13:58:38 +0200
+
+kruler (4:4.10.2-1) experimental; urgency=low
+
+  [ Diane Trout ]
+  * New upstream release.
+
+  [ Sune Vuorela ]
+  * Bump build-deps.
+  * Add me to uploaders.
+
+ -- Sune Vuorela <sune@debian.org>  Mon, 08 Apr 2013 07:10:45 +0000
+
+kruler (4:4.8.4-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency to 4.8.4.
+  * Bump kdelibs5-dev build dependency to 4.8.
+  * Bump Standards-Version to 3.9.3, no changes required.
+  * Add watch file.
+  * Convert copyright to copyright-format v1.0 and fix/update.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 16 Jun 2012 23:25:25 +0200
+
+kruler (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 07 Mar 2012 00:03:14 +0100
+
+kruler (4:4.7.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+  [ Eshat Cakar ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:38:53 +0100
+
+kruler (4:4.7.2-1) experimental; urgency=low
+
+  [ Eshat Cakar ]
+  * Initial release. Start from the Kubuntu packaging, thanks!
+  * Fix webpage in control (also reported to kubuntu)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:46:03 -0300
+
+kruler (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 22:13:46 +0100
+
+kruler (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:39:53 +0200
+
+kruler (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 12:40:22 +0100
+
+kruler (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 11:11:10 +0000
+
+kruler (4:4.12.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 21:00:38 +0100
+
+kruler (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 05 Feb 2014 00:12:39 +0000
+
+kruler (4:4.12.1-0ubuntu1) trusty; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 16 Jan 2014 08:27:35 +0000
+
+kruler (4:4.12.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 17:23:10 +0000
+
+kruler (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 29 Nov 2013 13:22:51 +0000
+
+kruler (4:4.11.95-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 25 Nov 2013 18:19:57 +0100
+
+kruler (4:4.11.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 17:48:40 +0100
+
+kruler (4:4.11.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Sep 2013 14:37:50 +0100
+
+kruler (4:4.11.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 06 Sep 2013 22:30:26 +0100
+
+kruler (4:4.11.0-0ubuntu1) saucy; urgency=low
+
+  [ Howard Chan ]
+  * New upstream release
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Aug 2013 00:26:24 +0100
+
+kruler (4:4.10.97-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC 2 release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 26 Jul 2013 19:48:18 +0100
+
+kruler (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 19 Jul 2013 12:32:58 +0000
+
+kruler (4:4.10.90-0ubuntu1) saucy; urgency=low
+
+  * New upstream bet release
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:21:50 +0100
+
+kruler (4:4.10.80-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:32:07 +0100
+
+kruler (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 07 Jun 2013 00:40:37 +0100
+
+kruler (4:4.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 May 2013 11:04:51 +0000
+
+kruler (4:4.10.2-1) experimental; urgency=low
+
+  [ Diane Trout ]
+  * New upstream release.
+
+  [ Sune Vuorela ]
+  * Bump build-deps.
+  * Add me to uploaders.
+
+ -- Sune Vuorela <sune@debian.org>  Mon, 08 Apr 2013 07:10:45 +0000
+
+kruler (4:4.10.2-0ubuntu1) raring; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 31 Mar 2013 14:55:24 +0200
+
+kruler (4:4.10.1-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 05 Mar 2013 16:36:45 +0000
+
+kruler (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 06 Feb 2013 12:01:48 +0000
+
+kruler (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jan 2013 15:50:21 +0000
+
+kruler (4:4.9.97-0ubuntu1) raring; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 Jan 2013 22:41:32 +0100
+
+kruler (4:4.9.95-0ubuntu1) raring; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Dec 2012 23:38:00 +0000
+
+kruler (4:4.9.90-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Dec 2012 18:05:14 +0000
+
+kruler (4:4.9.80-0ubuntu1) raring; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 19 Nov 2012 16:02:55 +0000
+
+kruler (4:4.9.3-0ubuntu1) raring; urgency=low
+
+  * New upstream release (LP: #1074747)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 06 Nov 2012 22:40:12 +0100
+
+kruler (4:4.9.2-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Oct 2012 15:31:46 +0100
+
+kruler (4:4.9.1-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 10 Sep 2012 18:36:46 +0530
+
+kruler (4:4.9.0-0ubuntu1) quantal; urgency=low
+
+  * Use direct build-depends versions rather than kde-sc-dev-latest
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 22:31:04 +0100
+
+kruler (4:4.8.90-0ubuntu1) quantal; urgency=low
+
+  * New upstream beta release.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 11 Jun 2012 23:36:50 +0200
+
+kruler (4:4.8.80-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Jun 2012 14:29:44 +0100
+
+kruler (4:4.8.4-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Bump kde-sc-dev-latest build dependency to 4.8.4.
+  * Bump kdelibs5-dev build dependency to 4.8.
+  * Bump Standards-Version to 3.9.3, no changes required.
+  * Add watch file.
+  * Convert copyright to copyright-format v1.0 and fix/update.
+
+ -- Pino Toscano <pino@debian.org>  Sat, 16 Jun 2012 23:25:25 +0200
+
+kruler (4:4.8.2-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 02 Apr 2012 19:10:01 +0200
+
+kruler (4:4.8.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:51:06 +0100
+
+kruler (4:4.8.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 20 Jan 2012 12:10:33 +0000
+
+kruler (4:4.7.97-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 05 Jan 2012 12:18:31 +0000
+
+kruler (4:4.7.95-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 24 Dec 2011 20:55:46 +0100
+
+kruler (4:4.7.90-0ubuntu1) precise; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 13:14:38 +0000
+
+kruler (4:4.7.4-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 07 Mar 2012 00:03:14 +0100
+
+kruler (4:4.7.4-1) experimental; urgency=low
+
+  * New upstream release.
+
+  [ Eshat Cakar ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:38:53 +0100
+
+kruler (4:4.7.3-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+  * Merge with Debian Git, no changes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 23 Nov 2011 23:47:03 +0000
+
+kruler (4:4.7.2-1) experimental; urgency=low
+
+  [ Eshat Cakar ]
+  * Initial release. Start from the Kubuntu packaging, thanks!
+  * Fix webpage in control (also reported to kubuntu)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:46:03 -0300
+
+kruler (4:4.7.2-0r1) raring; urgency=low
+
+  * Initial release. Start from the Kubuntu packaging, thanks!
+  * Fix webpage in control (also reported to kubuntu)
+
+ -- Eshat Cakar <info@eshat.de>  Tue, 04 Oct 2011 02:34:36 +0200
+
+kruler (4:4.7.1-0ubuntu2) oneiric; urgency=low
+
+  * No-change rebuild so translations aren't stripped from .desktop
+    files anymore.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 16 Sep 2011 01:02:02 +0200
+
+kruler (4:4.7.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Fri, 09 Sep 2011 23:50:22 -0400
+
+kruler (4:4.7.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 25 Jul 2011 00:21:54 +0200
+
+kruler (4:4.6.90+repack-0ubuntu1) oneiric; urgency=low
+
+  [ Harald Sitter ]
+  * Initial release (moved out of kdegraphics)
+
+  [ Felix Geyer ]
+  * Build-depend on libx11-dev.
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 10 Jul 2011 12:31:34 +0200
