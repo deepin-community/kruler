@@ -1,20 +1,10 @@
-/***************************************************************************
-                          klineal.h  -  description
-                             -------------------
-    begin                : Fri Oct 13 2000
-    Copyright            : (C) 2000 - 2008 by Till Krech <till@snafu.de>
-                           (C) 2009        by Mathias Soeken <msoeken@tzi.de>
-                           (C) 2017        by Aurélien Gâteau <agateau@kde.org>
- ***************************************************************************/
+/*
+    SPDX-FileCopyrightText: 2000-2008 Till Krech <till@snafu.de>
+    SPDX-FileCopyrightText: 2009 Mathias Soeken <msoeken@tzi.de>
+    SPDX-FileCopyrightText: 2017 Aurélien Gâteau <agateau@kde.org>
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+    SPDX-License-Identifier: GPL-2.0-or-later
+*/
 
 #ifndef KLINEAL_H
 #define KLINEAL_H
@@ -33,7 +23,7 @@ class KLineal : public QWidget {
 
 public:
   explicit KLineal( QWidget *parent = nullptr );
-  ~KLineal();
+  ~KLineal() override;
 
   void move( int x, int y );
   void move( const QPoint &p );
@@ -45,7 +35,6 @@ protected:
   void keyPressEvent( QKeyEvent *e ) override;
   void leaveEvent( QEvent *e ) override;
   void mousePressEvent( QMouseEvent *e ) override;
-  void mouseReleaseEvent( QMouseEvent *e ) override;
   void mouseMoveEvent( QMouseEvent *e ) override;
   void wheelEvent( QWheelEvent *e ) override;
   void paintEvent( QPaintEvent *e ) override;
@@ -74,14 +63,7 @@ private:
   void stopNativeMove( QMouseEvent *e );
   QString indicatorText() const;
 
-  enum RulerState {
-    StateNone,
-    StateMove,
-    StateBegin,
-    StateEnd
-  };
   QCursor mCrossCursor;
-  RulerState mRulerState = StateNone;
   QPoint mLastClickPos;
   QPoint mDragOffset;
   bool mHorizontal = false;
@@ -100,12 +82,13 @@ private:
   KActionCollection *mActionCollection = nullptr;
   int mOpacity = 0;
   KRulerSystemTray *mTrayIcon = nullptr;
+  bool mWayland;
 
   void setHorizontal( bool horizontal );
 
-  bool isResizing() const;
   int length() const;
   QPoint localCursorPos() const;
+  qreal pixelRatio() const;
 
 public Q_SLOTS:
   void rotate();

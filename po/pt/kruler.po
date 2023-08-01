@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kruler\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
 "PO-Revision-Date: 2017-06-15 14:35+0100\n"
 "Last-Translator: José Nuno Pires <zepires@gmail.com>\n"
 "Language-Team: pt <kde-i18n-pt@kde.org>\n"
@@ -16,24 +16,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-SpellExtra: Soeken pt\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:23
-#, kde-format
-msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr ""
-"Se esta opção estiver activa, a janela será movida com as operações do "
-"gestor de janelas."
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr "Movimento nativo"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
+#: cfg_advanced.ui:23
 #, kde-format
 msgid ""
 "If this option is enabled, the window is being kept above other windows."
@@ -42,7 +26,7 @@ msgstr ""
 "janelas."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
 msgstr "Sempre no topo"
@@ -90,7 +74,7 @@ msgstr "Rodar"
 msgid "&Scale"
 msgstr "E&scala"
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr "Direita para Esquerda"
@@ -115,48 +99,48 @@ msgstr "Percentagem"
 msgid "O&pacity"
 msgstr "O&pacidade"
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr "Esquerda para Direita"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr "Baixo para Cima"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr "Cima para Baixo"
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr "Posição da Escala"
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr "Deslocamento:"
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr "Aparência"
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr "Avançado"
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
 msgstr "%1 pt"
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -215,29 +199,23 @@ msgstr "Se é usado um ícone da bandeja"
 msgid "Opacity of the window"
 msgstr "Opacidade da janela"
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
-#: kruler.kcfg:47
-#, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr "Se o movimento nativo (que pode tremer as janelas) está activo"
-
 #. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
+#: kruler.kcfg:47
 #, kde-format
 msgid "Is always on top"
 msgstr "Está sempre no topo"
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "Régua do Ecrã do KDE"
 
-#: main.cpp:39
+#: main.cpp:34
 #, kde-format
 msgid "A screen ruler by KDE"
 msgstr "Uma régua do ecrã do KDE"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
@@ -246,47 +224,60 @@ msgstr ""
 "(c) 2000 - 2008, Till Krech\n"
 "(c) 2009, Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr "Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr "Manutenção"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr "Till Krech"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr "Manutenção e desenvolvimento anterior"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr "Gunnstein Lye"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "Transição inicial para o KDE 2"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "José Nuno Pires,Pedro Morais"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "zepires@gmail.com,morais@kde.org"
+
+#~ msgid ""
+#~ "If this option is enabled, the window is being moved using the operations "
+#~ "from the window manager."
+#~ msgstr ""
+#~ "Se esta opção estiver activa, a janela será movida com as operações do "
+#~ "gestor de janelas."
+
+#~ msgid "Native moving"
+#~ msgstr "Movimento nativo"
+
+#~ msgid "Is native moving (possibly wobbling windows) active"
+#~ msgstr "Se o movimento nativo (que pode tremer as janelas) está activo"
 
 #~ msgid "KRuler"
 #~ msgstr "KRuler"

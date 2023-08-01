@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kruler\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
 "PO-Revision-Date: 2004-08-14 12:35+0530\n"
 "Last-Translator: I. Felix <ifelix25@yahoo.co.in>\n"
 "Language-Team: TAMIL <tamilinix@yahoogroups.com>\n"
@@ -16,29 +16,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:23
-#, kde-format
-msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr ""
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
+#: cfg_advanced.ui:23
 #, kde-format
 msgid ""
 "If this option is enabled, the window is being kept above other windows."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
 msgstr ""
@@ -91,7 +77,7 @@ msgstr ""
 msgid "&Scale"
 msgstr ""
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr ""
@@ -116,48 +102,48 @@ msgstr ""
 msgid "O&pacity"
 msgstr ""
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr ""
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr ""
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr ""
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr ""
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr ""
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr ""
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr ""
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
 msgstr ""
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
 msgstr ""
@@ -218,73 +204,67 @@ msgstr ""
 msgid "Opacity of the window"
 msgstr ""
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
-#: kruler.kcfg:47
-#, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr ""
-
 #. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
+#: kruler.kcfg:47
 #, kde-format
 msgid "Is always on top"
 msgstr ""
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "KDE திரை அளவுப்பலகை"
 
-#: main.cpp:39
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "A screen ruler for the K Desktop Environment"
 msgid "A screen ruler by KDE"
 msgstr "கே மேல்மேசைச் சூழலுக்கான ஒரு திரை அளவுக்கோல்"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
 "(c) 2009, Mathias Soeken"
 msgstr ""
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr ""
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr ""
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr ""
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr ""
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr ""
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "KDE2 க்குரிய ஆரம்ப முகப்பு"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "தி. லெட்சுமணன்"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"

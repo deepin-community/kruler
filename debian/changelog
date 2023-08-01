@@ -1,3 +1,46 @@
+kruler (4:22.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.3).
+  * Update build-deps and deps with the info from cmake.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Wed, 01 Mar 2023 11:57:59 +0100
+
+kruler (4:22.12.1-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.12.1).
+  * Bump Standards-Version to 4.6.2, no change required.
+  * Add Albert Astals Cid’s master key to upstream signing keys.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Fri, 06 Jan 2023 23:39:12 +0100
+
+kruler (4:22.12.0-2) unstable; urgency=medium
+
+  * Upload with a correctly released changelog.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Dec 2022 16:04:52 +0100
+
+kruler (4:22.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (22.08.3).
+  * Update build-deps and deps with the info from cmake.
+  * Bump Standards-Version to 4.6.1, no change required.
+  * New upstream release (22.11.90).
+  * Update build-deps and deps with the info from cmake.
+  * New upstream release (22.12.0).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 10 Dec 2022 00:13:03 +0100
+
+kruler (4:21.12.3-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * New upstream release (21.12.3).
+  * Bump Standards-Version to 4.6.0, no change required.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 07 Mar 2022 23:12:42 +0100
+
 kruler (4:21.08.0-1) unstable; urgency=medium
 
   [ Norbert Preining ]

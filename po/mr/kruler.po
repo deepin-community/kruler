@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
 "PO-Revision-Date: 2013-03-28 15:17+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -17,24 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:23
-#, kde-format
-msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr ""
-"जर हा पर्याय कार्यान्वित केला तर चौकट हलविण्याकरिता चौकट व्यवस्थापकाची क्रिया वापरली "
-"जाईल."
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr "स्थानिक हलविणे"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
+#: cfg_advanced.ui:23
 #, fuzzy, kde-format
 #| msgid ""
 #| "If this option is enabled, the window is being moved using the operations "
@@ -46,7 +30,7 @@ msgstr ""
 "जाईल."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
 msgstr ""
@@ -97,7 +81,7 @@ msgstr ""
 msgid "&Scale"
 msgstr "प्रमाण (&S)"
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr "उजवीकडुन डावीकडे"
@@ -122,48 +106,48 @@ msgstr "टक्के"
 msgid "O&pacity"
 msgstr "अपारदर्शकता (&P)"
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr "डावीकडुन उजवीकडे"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr "खालून वर"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr "वरुन खाली"
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr "प्रमाण ऑफसेट"
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr "ऑफसेट :"
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr "दर्शनीयता"
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr "प्रगत"
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
 msgstr ""
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
 msgstr ""
@@ -222,30 +206,24 @@ msgstr "ट्रे चिन्ह वापरले आहे का"
 msgid "Opacity of the window"
 msgstr "चौकटीची अपारदर्शकता"
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
-#: kruler.kcfg:47
-#, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr "स्थानिक हलविणे (कदाचित थरथरणाऱ्या चौकटी) सक्रिय आहे का"
-
 #. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
+#: kruler.kcfg:47
 #, kde-format
 msgid "Is always on top"
 msgstr ""
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "केडीई स्क्रीन मोजपट्टी"
 
-#: main.cpp:39
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "A screen ruler for KDE"
 msgid "A screen ruler by KDE"
 msgstr "केडीई करिता स्क्रीन मोजपट्टी"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
@@ -254,47 +232,60 @@ msgstr ""
 "(c) 2000 - 2008, टिल क्रेच\n"
 "(c) 2009, माथिआस सोकेन"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr "माथिआस सोकेन"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr "पालक"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr "टिल क्रेच"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr "पूर्वीचा पालक व विकासकर्ता"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr "गनस्टैन लाय"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "केडीई 2 करिता सुरुवातीचे पोर्ट"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "चेतन खोना"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "chetan@kompkin.com"
+
+#~ msgid ""
+#~ "If this option is enabled, the window is being moved using the operations "
+#~ "from the window manager."
+#~ msgstr ""
+#~ "जर हा पर्याय कार्यान्वित केला तर चौकट हलविण्याकरिता चौकट व्यवस्थापकाची क्रिया "
+#~ "वापरली जाईल."
+
+#~ msgid "Native moving"
+#~ msgstr "स्थानिक हलविणे"
+
+#~ msgid "Is native moving (possibly wobbling windows) active"
+#~ msgstr "स्थानिक हलविणे (कदाचित थरथरणाऱ्या चौकटी) सक्रिय आहे का"
 
 #~ msgid "KRuler"
 #~ msgstr "के-रुलर"

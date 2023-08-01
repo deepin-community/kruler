@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kruler\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
 "PO-Revision-Date: 2009-05-27 20:24+0300\n"
 "Last-Translator: Viesturs Zariņš <viesturs.zarins@mii.lu.lv>\n"
 "Language-Team: Latvian <locale@laka.lv>\n"
@@ -21,24 +21,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:23
-#, kde-format
-msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr ""
-"Ja šis ir ieslēgts, logs tiks pārvietots izmantojot logu pārvaldnieka "
-"darbības"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr "Iebūvētā pārvietošana"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
+#: cfg_advanced.ui:23
 #, fuzzy, kde-format
 #| msgid ""
 #| "If this option is enabled, the window is being moved using the operations "
@@ -50,7 +34,7 @@ msgstr ""
 "darbības"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
 msgstr ""
@@ -102,7 +86,7 @@ msgstr ""
 msgid "&Scale"
 msgstr "&Mērogs"
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr "No kreisā uz labo"
@@ -127,49 +111,49 @@ msgstr "Procenti"
 msgid "O&pacity"
 msgstr "Necaurs&pīdīgums"
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr "No kreisās uz labo"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr "No lejas uz augšu"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr "No augšas uz leju"
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, fuzzy, kde-format
 #| msgid "Scale Offset"
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr "Mēroga nobīde"
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr "Nobīde:"
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr "Izskats"
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr "Paplašināti"
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
 msgstr ""
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
 msgstr ""
@@ -228,30 +212,24 @@ msgstr "Ir vai lieto sistēmas ikonu"
 msgid "Opacity of the window"
 msgstr "Loga necaurspīdīgums"
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
-#: kruler.kcfg:47
-#, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr "Vai aktīva iebūvētā pārvietošana (iespējams ar ļodzīgiem logiem) "
-
 #. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
+#: kruler.kcfg:47
 #, kde-format
 msgid "Is always on top"
 msgstr ""
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "KDE ekrāna mērlenta"
 
-#: main.cpp:39
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "A screen ruler for the K Desktop Environment"
 msgid "A screen ruler by KDE"
 msgstr "Ekrāna mērlenta K Darbvirsmas videi"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
@@ -260,47 +238,60 @@ msgstr ""
 "(c) 2000 - 2008, Till Krech\n"
 "(c) 2009, Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr "Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr "Uzturētājs"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr "Till Krech"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr "Iepriekšējais uzturētājs un izstrādātājs"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr "Gunnstein Lye"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "Sākotnējā pārnešana uz KDE 2"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Andris Maziks, Anita Reitere, Viesturs Zariņš"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "andris.m@delfi.lv, nita@cc.lv, viesturs.zarins@mii.lu.lv"
+
+#~ msgid ""
+#~ "If this option is enabled, the window is being moved using the operations "
+#~ "from the window manager."
+#~ msgstr ""
+#~ "Ja šis ir ieslēgts, logs tiks pārvietots izmantojot logu pārvaldnieka "
+#~ "darbības"
+
+#~ msgid "Native moving"
+#~ msgstr "Iebūvētā pārvietošana"
+
+#~ msgid "Is native moving (possibly wobbling windows) active"
+#~ msgstr "Vai aktīva iebūvētā pārvietošana (iespējams ar ļodzīgiem logiem) "
 
 #~ msgid "KRuler"
 #~ msgstr "KRuler"
