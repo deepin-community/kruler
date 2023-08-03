@@ -5,53 +5,36 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
 # hayig2000 <hayig2000@gmail.com>, 2008.
-# zayed <zayed.alsaidi@gmail.com>, 2008, 2012.
+# zayed <zayed.alsaidi@gmail.com>, 2008, 2012, 2021.
 # OsamaKhalid <osamak.wfm@gmail.com>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: kruler\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
-"PO-Revision-Date: 2012-01-22 22:35+0400\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
+"PO-Revision-Date: 2021-07-15 13:56+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
-"Language-Team: Arabic <kde-i18n-doc@kde.org>\n"
+"Language-Team: ar\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 21.07.70\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
 #: cfg_advanced.ui:23
 #, kde-format
 msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr "إذا فعل هذا الخيار ، ستحرك النافذة باستخدام عمليات مدير النوافذ."
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr "تحريك أصلي"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
-#, fuzzy, kde-format
-#| msgid ""
-#| "If this option is enabled, the window is being moved using the operations "
-#| "from the window manager."
-msgid ""
 "If this option is enabled, the window is being kept above other windows."
-msgstr "إذا فعل هذا الخيار ، ستحرك النافذة باستخدام عمليات مدير النوافذ."
+msgstr "إذا فعل هذا الخيار ، ستكون النافذة فوق جميع النوافذ دائما."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
-msgstr ""
+msgstr "دائما فوق"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: cfg_appearance.ui:20
@@ -78,28 +61,25 @@ msgid "KRuler"
 msgstr "مسطرة ك"
 
 #: klineal.cpp:94
-#, fuzzy, kde-format
-#| msgid ""
-#| "This is a tool to measure pixel distances and colors on the screen. It is "
-#| "useful for working on layouts of dialogs, web pages etc."
+#, kde-format
 msgid ""
 "This is a tool to measure pixel distances on the screen. It is useful for "
 "working on layouts of dialogs, web pages etc."
 msgstr ""
-"هذه الأداة تساعد على حساب مسافات البكسل، والألوان على الشاشة، وهي مفيدة "
-"للعمل على مخططات صناديق الحوار، وصفحات الويب، إلخ.."
+"هذه الأداة تساعد على حساب مسافات البكسل على الشاشة، وهي مفيدة للعمل على "
+"مخططات صناديق الحوار، وصفحات الويب، إلخ.."
 
 #: klineal.cpp:120
 #, kde-format
 msgid "Rotate"
-msgstr ""
+msgstr "دوّر"
 
 #: klineal.cpp:123
 #, kde-format
 msgid "&Scale"
 msgstr "&قس"
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr "اليمين لليسار"
@@ -124,51 +104,51 @@ msgstr "النسبة المئوية"
 msgid "O&pacity"
 msgstr "&عتّم"
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr "اليسار لليمين"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr "الأسفل للأعلى"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr "الأعلى للأسفل"
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr "إزاحة القياس"
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr "الإزاحة:"
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr "المظهر"
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr "متقدم"
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
-msgstr ""
+msgstr "%1 بكسل"
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1٪"
 
 #. i18n: ectx: label, entry (BgColor), group (StoredSettings)
 #: kruler.kcfg:11
@@ -192,7 +172,7 @@ msgstr "خط النص على مقياس المسطرة."
 #: kruler.kcfg:23
 #, kde-format
 msgid "Horizontal ruler"
-msgstr ""
+msgstr "مسطرة أفقية"
 
 #. i18n: ectx: label, entry (LeftToRight), group (StoredSettings)
 #: kruler.kcfg:27
@@ -224,30 +204,23 @@ msgstr "أيقونة الصينية المستخدمة"
 msgid "Opacity of the window"
 msgstr "عتم النافذة"
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
+#. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
 #: kruler.kcfg:47
 #, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr "هل التحريك الأصلي نشط"
-
-#. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
-#, kde-format
 msgid "Is always on top"
-msgstr ""
+msgstr "دائما فوق"
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "مسطرة الشاشة كدي"
 
-#: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "A screen ruler for KDE"
+#: main.cpp:34
+#, kde-format
 msgid "A screen ruler by KDE"
 msgstr "مسطرة شاشة لكدي"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
@@ -256,47 +229,58 @@ msgstr ""
 "(c) 2000 - 2008, Till Krech\n"
 "(c) 2009, Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr "Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr "المشرف"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr "Till Krech"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr "مشرف ومطور سابق"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr "Gunnstein Lye"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "النقل المبدئي إلى كدي 2"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "hayig2000,زايد السعيدي"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "hayig2000@gmail.com,zayed.alsaidi@gmail.com"
+
+#~ msgid ""
+#~ "If this option is enabled, the window is being moved using the operations "
+#~ "from the window manager."
+#~ msgstr "إذا فعل هذا الخيار ، ستحرك النافذة باستخدام عمليات مدير النوافذ."
+
+#~ msgid "Native moving"
+#~ msgstr "تحريك أصلي"
+
+#~ msgid "Is native moving (possibly wobbling windows) active"
+#~ msgstr "هل التحريك الأصلي نشط"
 
 #~ msgid "KRuler"
 #~ msgstr "مسطرتك"

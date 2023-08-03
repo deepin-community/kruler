@@ -3,54 +3,34 @@
 #
 # Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006, 2007.
 # Yasen Pramatarov <yasen@lindeas.com>, 2010, 2011.
+# Mincho Kondarev <mkondarev@yahoo.de>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: kruler\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
-"PO-Revision-Date: 2011-07-13 09:33+0300\n"
-"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
-"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
+"PO-Revision-Date: 2022-07-18 22:57+0200\n"
+"Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
+"Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 22.04.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
 #: cfg_advanced.ui:23
 #, kde-format
 msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr ""
-"Ако това е включено, прозорецът се премества с действия, управлявани от "
-"мениджъра на прозорци."
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr "Естествено преместване"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
-#, fuzzy, kde-format
-#| msgid ""
-#| "If this option is enabled, the window is being moved using the operations "
-#| "from the window manager."
-msgid ""
 "If this option is enabled, the window is being kept above other windows."
-msgstr ""
-"Ако това е включено, прозорецът се премества с действия, управлявани от "
-"мениджъра на прозорци."
+msgstr "Ако това е включено, прозорецът се задържа над другите прозорци."
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
-msgstr ""
+msgstr "Винаги отгоре"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: cfg_appearance.ui:20
@@ -77,10 +57,7 @@ msgid "KRuler"
 msgstr "KRuler"
 
 #: klineal.cpp:94
-#, fuzzy, kde-format
-#| msgid ""
-#| "This is a tool to measure pixel distances and colors on the screen. It is "
-#| "useful for working on layouts of dialogs, web pages etc."
+#, kde-format
 msgid ""
 "This is a tool to measure pixel distances on the screen. It is useful for "
 "working on layouts of dialogs, web pages etc."
@@ -91,14 +68,14 @@ msgstr ""
 #: klineal.cpp:120
 #, kde-format
 msgid "Rotate"
-msgstr ""
+msgstr "Завъртване"
 
 #: klineal.cpp:123
 #, kde-format
 msgid "&Scale"
 msgstr "&Скала"
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr "Отдясно наляво"
@@ -106,7 +83,7 @@ msgstr "Отдясно наляво"
 #: klineal.cpp:126
 #, kde-format
 msgid "Center Origin"
-msgstr ""
+msgstr "Центриране на началото"
 
 #: klineal.cpp:129
 #, kde-format
@@ -123,51 +100,51 @@ msgstr "Процент"
 msgid "O&pacity"
 msgstr "&Прозрачност"
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr "Отляво надясно"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr "Отгоре надолу"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr "Отдолу нагоре"
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr "Отместване на скалата:"
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr "Отместване:"
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr "Изглед"
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr "Разширено"
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
-msgstr ""
+msgstr "%1 px"
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
-msgstr ""
+msgstr "%1%"
 
 #. i18n: ectx: label, entry (BgColor), group (StoredSettings)
 #: kruler.kcfg:11
@@ -191,7 +168,7 @@ msgstr "Шрифт за текста върху линийката"
 #: kruler.kcfg:23
 #, kde-format
 msgid "Horizontal ruler"
-msgstr ""
+msgstr "Хоризонтална линия"
 
 #. i18n: ectx: label, entry (LeftToRight), group (StoredSettings)
 #: kruler.kcfg:27
@@ -203,7 +180,7 @@ msgstr "Посока на линийката"
 #: kruler.kcfg:31
 #, kde-format
 msgid "Offset of the origin"
-msgstr ""
+msgstr "Отместване на началото"
 
 #. i18n: ectx: label, entry (RelativeScale), group (StoredSettings)
 #: kruler.kcfg:35
@@ -223,30 +200,23 @@ msgstr "Дали се използва икона в системния подн
 msgid "Opacity of the window"
 msgstr "Прозрачност на прозореца"
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
+#. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
 #: kruler.kcfg:47
 #, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr "Дали естественото движение (и вероятно желирани прозорци) е включено"
-
-#. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
-#, kde-format
 msgid "Is always on top"
-msgstr ""
+msgstr "Винаги отгоре"
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "Линийка за екрана в KDE"
 
-#: main.cpp:39
-#, fuzzy, kde-format
-#| msgid "A screen ruler for KDE"
+#: main.cpp:34
+#, kde-format
 msgid "A screen ruler by KDE"
 msgstr "Линийка за измерване на екрана в KDE"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
@@ -255,148 +225,44 @@ msgstr ""
 "(c) 2000 - 2008, Till Krech\n"
 "(c) 2009, Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr "Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr "Поддръжка"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr "Till Krech"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr "Предишна поддръжка и разработчик"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr "Gunnstein Lye"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "Първоначална версия за KDE 2"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Ясен Праматаров,Радостин Раднев,Красимир Арнаудов"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yasen@lindeas.com,radnev@yahoo.com,krasi.arnaudov@gmail.com"
-
-#~ msgid "KRuler"
-#~ msgstr "KRuler"
-
-#~ msgid "Show rotation buttons"
-#~ msgstr "Показване на бутони за завъртане"
-
-#~ msgid "Show close button"
-#~ msgstr "Показване на бутон за затваряне"
-
-#~ msgid "This is the current distance measured in pixels."
-#~ msgstr ""
-#~ "Текущото разстояние от началото на линията до курсора, измерено в пиксели "
-#~ "от екрана."
-
-#~ msgid ""
-#~ "This is the current color in hexadecimal rgb representation as you may "
-#~ "use it in HTML or as a QColor name. The rectangles background shows the "
-#~ "color of the pixel inside the little square at the end of the line cursor."
-#~ msgstr ""
-#~ "Текущият цвят представен като шестнадесетично число във формат RGB. Може "
-#~ "да се използва в уеб страници или във функции, които изискват подобен "
-#~ "параметър. В полето е записан цвета на пиксела в малкия квадрат, който се "
-#~ "намира на края на курсора."
-
-#~ msgid "Turn Left"
-#~ msgstr "Обръщане наляво"
-
-#~ msgid "Turn Right"
-#~ msgstr "Обръщане надясно"
-
-#~ msgid "&Orientation"
-#~ msgstr "&Ориентация"
-
-#~ msgctxt "Turn Kruler North"
-#~ msgid "&North"
-#~ msgstr "&Север"
-
-#~ msgctxt "Turn Kruler East"
-#~ msgid "&East"
-#~ msgstr "&Изток"
-
-#~ msgctxt "Turn Kruler South"
-#~ msgid "&South"
-#~ msgstr "&Юг"
-
-#~ msgctxt "Turn Kruler West"
-#~ msgid "&West"
-#~ msgstr "&Запад"
-
-#~ msgid "&Turn Right"
-#~ msgstr "Обръщане на&дясно"
-
-#~ msgid "Turn &Left"
-#~ msgstr "Обръщане на&ляво"
-
-#~ msgid "&Length"
-#~ msgstr "&Дължина"
-
-#~ msgctxt "Make Kruler Height Short"
-#~ msgid "&Short"
-#~ msgstr "&Къса"
-
-#~ msgctxt "Make Kruler Height Medium"
-#~ msgid "&Medium"
-#~ msgstr "&Средна"
-
-#~ msgctxt "Make Kruler Height Tall"
-#~ msgid "&Tall"
-#~ msgstr "&Дълга"
-
-#~ msgid "&Full Screen Width"
-#~ msgstr "&Цял екран"
-
-#~ msgid "Length..."
-#~ msgstr "Дължина..."
-
-#~ msgid "Copy Color"
-#~ msgstr "Копиране на цвят"
-
-#~ msgid "&Full Screen Height"
-#~ msgstr "&Цял екран"
-
-#~ msgctxt "@title:window"
-#~ msgid "Ruler Length"
-#~ msgstr "Дължина на линийката"
-
-#~ msgid "Length:"
-#~ msgstr "Дължина:"
-
-#~ msgid "Offset: %1"
-#~ msgstr "Отместване: %1"
-
-#~ msgid "Length: %1 px"
-#~ msgstr "Дължина: %1 точки"
-
-#~ msgid "Orientation of the ruler"
-#~ msgstr "Ориентация на линийката"
-
-#~ msgid "Are the rotate buttons visible"
-#~ msgstr "Дали са видими бутоните за завъртане"
-
-#~ msgid "Is the close button visible"
-#~ msgstr "Дали е видим бутонът за затваряне"

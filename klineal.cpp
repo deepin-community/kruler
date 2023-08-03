@@ -1,35 +1,25 @@
-/***************************************************************************
-                          klineal.cpp  -  description
-                             -------------------
-    Begin                : Fri Oct 13 2000
-    Copyright            : 2000 by Till Krech <till@snafu.de>
-                           2008 by Mathias Soeken <msoeken@informatik.uni-bremen.de>
-                           2017 by Aurélien Gâteau <agateau@kde.org>
- ***************************************************************************/
+/*
+    SPDX-FileCopyrightText: 2000 Till Krech <till@snafu.de>
+    SPDX-FileCopyrightText: 2008 Mathias Soeken <msoeken@informatik.uni-bremen.de>
+    SPDX-FileCopyrightText: 2017 Aurélien Gâteau <agateau@kde.org>
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+    SPDX-License-Identifier: GPL-2.0-or-later
+*/
 
 #include "klineal.h"
 
 #include <QAction>
 #include <QApplication>
 #include <QBrush>
-#include <QDesktopWidget>
+#include <QScreen>
 #include <QInputDialog>
 #include <QMenu>
 #include <QMouseEvent>
 #include <QPainter>
 #include <QSlider>
 #include <QWidgetAction>
+#include <QWindow>
 
-#include <kxmlgui_version.h>
 #include <KAboutData>
 #include <KActionCollection>
 #include <KConfig>
@@ -45,7 +35,11 @@
 #include "krulerconfig.h"
 
 #ifdef KRULER_HAVE_X11
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <QX11Info>
+#else
+#include <private/qtx11extras_p.h>
+#endif
 #include <netwm.h>
 #endif
 
@@ -83,6 +77,12 @@ static const int CURSOR_SIZE = 15; // Must be an odd number
 KLineal::KLineal( QWidget *parent )
   : QWidget( parent )
 {
+  // In Wayland, clients cannot currently query a fractional pixel ratio. To
+  // avoid showing a wrong value, we do not remap virtualized values and
+  // simply return 1 in the pixelRatio() method. This logic can be removed
+  // once Wayland fills the gap.
+  mWayland = KWindowSystem::isPlatformWayland();
+
   setAttribute( Qt::WA_TranslucentBackground );
   KWindowSystem::setType( winId(), NET::Override );   // or NET::Normal
   KWindowSystem::setState( winId(), NET::KeepAbove );
@@ -181,6 +181,7 @@ KLineal::KLineal( QWidget *parent )
 
 KLineal::~KLineal()
 {
+  saveSettings();
   delete mTrayIcon;
 }
 
@@ -298,7 +299,7 @@ void KLineal::setHorizontal( bool horizontal )
   QPoint newTopLeft = QPoint( center.x() - height() / 2, center.y() - width() / 2 );
   r.moveTo(newTopLeft);
 
-  QRect desktop = QApplication::desktop()->screenGeometry( this );
+  QRect desktop = QGuiApplication::primaryScreen()->geometry();
 
   if ( r.width() > desktop.width() ) {
     r.setWidth( desktop.width() );
@@ -382,7 +383,7 @@ void KLineal::switchDirection()
 
 void KLineal::centerOrigin()
 {
-  mOffset = -( length() / 2 );
+  mOffset = -qRound( length()*pixelRatio() / 2 );
   repaint();
   saveSettings();
 }
@@ -411,11 +412,7 @@ void KLineal::slotOpacity( int value )
 
 void KLineal::slotKeyBindings()
 {
-#if KXMLGUI_VERSION >= QT_VERSION_CHECK(5,84,0)
     KShortcutsDialog::showDialog(mActionCollection, KShortcutsEditor::LetterShortcutsAllowed, this);
-#else
-  KShortcutsDialog::configure( mActionCollection );
-#endif
 }
 
 void KLineal::slotPreferences()
@@ -505,11 +502,6 @@ void KLineal::showMenu()
   mMenu->popup( pos );
 }
 
-bool KLineal::isResizing() const
-{
-  return mouseGrabber() == this && ( mRulerState == StateBegin || mRulerState == StateEnd );
-}
-
 int KLineal::length() const
 {
   return mHorizontal ? width() : height();
@@ -522,12 +514,19 @@ QPoint KLineal::localCursorPos() const
   return QCursor::pos() - pos();
 }
 
+inline qreal KLineal::pixelRatio() const
+{
+  if (mWayland || !windowHandle())
+    return 1;
+  return windowHandle()->devicePixelRatio();
+}
+
 QString KLineal::indicatorText() const
 {
   int xy = mHorizontal ? localCursorPos().x() : localCursorPos().y();
   if ( !mRelativeScale ) {
     int len = mLeftToRight ? xy + 1 : length() - xy;
-    return i18n( "%1 px", len );
+    return i18n( "%1 px", qRound(len*pixelRatio()) );
   } else {
     int len = ( xy * 100.f ) / length();
 
@@ -587,43 +586,6 @@ void KLineal::leaveEvent( QEvent *e )
   update();
 }
 
-void KLineal::mouseMoveEvent( QMouseEvent *inEvent )
-{
-  Q_UNUSED( inEvent );
-
-  if ( mRulerState >= StateMove ) {
-    if ( mouseGrabber() != this ) {
-      return;
-    }
-    if ( mRulerState == StateMove ) {
-      move( QCursor::pos() - mDragOffset );
-    } else if ( mRulerState == StateBegin ) {
-      QRect r = geometry();
-      if ( mHorizontal ) {
-        r.setLeft( QCursor::pos().x() - mDragOffset.x() );
-      } else {
-        r.setTop( QCursor::pos().y() - mDragOffset.y() );
-      }
-      setGeometry( r );
-    } else if ( mRulerState == StateEnd ) {
-      QPoint end = QCursor::pos() + mDragOffset - pos();
-      QSize size = mHorizontal
-        ? QSize( end.x(), height() )
-        : QSize( width(), end.y() );
-      resize( size );
-    }
-  } else {
-    QPoint cpos = localCursorPos();
-    mRulerState = StateNone;
-    if ( beginRect().contains( cpos ) || endRect().contains( cpos) ) {
-      setCursor( resizeCursor() );
-    } else {
-      setCursor( mCrossCursor );
-    }
-    update();
-  }
-}
-
 /**
  * overwritten for dragging and context menu
  */
@@ -634,22 +596,12 @@ void KLineal::mousePressEvent( QMouseEvent *inEvent )
   QRect gr = geometry();
   mDragOffset = mLastClickPos - gr.topLeft();
   if ( inEvent->button() == Qt::LeftButton ) {
-    if ( mRulerState < StateMove ) {
-      if ( beginRect().contains( mDragOffset ) ) {
-        mRulerState = StateBegin;
-        grabMouse( resizeCursor() );
-      } else if ( endRect().contains( mDragOffset ) ) {
-        mDragOffset = gr.bottomRight() - mLastClickPos;
-        mRulerState = StateEnd;
-        grabMouse( resizeCursor() );
-      } else {
-        if ( nativeMove() ) {
-          startNativeMove( inEvent );
-        } else {
-          mRulerState = StateMove;
-          grabMouse( Qt::SizeAllCursor );
-        }
-      }
+    if ( beginRect().contains( mDragOffset ) ) {
+      windowHandle()->startSystemResize(mHorizontal ? Qt::LeftEdge : Qt::TopEdge);
+    } else if ( endRect().contains( mDragOffset ) ) {
+      windowHandle()->startSystemResize(mHorizontal ? Qt::RightEdge : Qt::BottomEdge);
+    } else {
+      windowHandle()->startSystemMove();
     }
   } else if ( inEvent->button() == Qt::MiddleButton ) {
     mClicked = true;
@@ -659,54 +611,18 @@ void KLineal::mousePressEvent( QMouseEvent *inEvent )
   }
 }
 
-#ifdef KRULER_HAVE_X11
-bool KLineal::nativeMove() const
-{
-  return QX11Info::isPlatformX11() && RulerSettings::self()->nativeMoving();
-}
-
-void KLineal::startNativeMove( QMouseEvent *inEvent )
-{
-  xcb_ungrab_pointer( QX11Info::connection(), QX11Info::appTime() );
-  NETRootInfo wm_root( QX11Info::connection(), NET::WMMoveResize );
-  wm_root.moveResizeRequest( winId(), inEvent->globalX(), inEvent->globalY(), NET::Move );
-}
-
-void KLineal::stopNativeMove( QMouseEvent *inEvent )
-{
-  NETRootInfo wm_root( QX11Info::connection(), NET::WMMoveResize );
-  wm_root.moveResizeRequest( winId(), inEvent->globalX(), inEvent->globalY(), NET::MoveResizeCancel );
-}
-#else
-bool KLineal::nativeMove() const
-{
-  return false;
-}
-
-void KLineal::startNativeMove( QMouseEvent *inEvent )
+void KLineal::mouseMoveEvent( QMouseEvent *inEvent )
 {
   Q_UNUSED( inEvent );
-}
-
-void KLineal::stopNativeMove( QMouseEvent *inEvent )
-{
-  Q_UNUSED( inEvent );
-}
-#endif
-
-/**
- * overwritten for dragging
- */
-void KLineal::mouseReleaseEvent( QMouseEvent *inEvent )
-{
-  if ( mRulerState != StateNone ) {
-    mRulerState = StateNone;
-    releaseMouse();
-    saveSettings();
-  } else if ( nativeMove() ) {
-    stopNativeMove( inEvent );
+  QPoint cpos = localCursorPos();
+  if ( beginRect().contains( cpos ) || endRect().contains( cpos) ) {
+    setCursor( resizeCursor() );
+  } else {
+    setCursor( mCrossCursor );
   }
+  update();
 }
+
 
 void KLineal::wheelEvent( QWheelEvent *e )
 {
@@ -731,10 +647,10 @@ void KLineal::wheelEvent( QWheelEvent *e )
  */
 void KLineal::drawScale( QPainter &painter )
 {
-  painter.setPen( Qt::black );
+  painter.setPen( QPen(Qt::black, 1/pixelRatio()) );
   QFont font = mScaleFont;
   painter.setFont( font );
-  int longLen = length();
+  int longLen = length()*pixelRatio();
 
   if ( !mRelativeScale ) {
     int digit;
@@ -792,23 +708,24 @@ void KLineal::drawScaleText( QPainter &painter, int x, const QString &text )
 {
   QFontMetrics metrics = painter.fontMetrics();
   QSize textSize = metrics.size( Qt::TextSingleLine, text );
-  int w = width();
-  int h = height();
-  int tw = textSize.width();
-  int th = metrics.ascent();
+  qreal w = width();
+  qreal h = height();
+  qreal tw = textSize.width();
+  qreal th = metrics.ascent();
+  qreal lx = x/pixelRatio();
 
   if ( mHorizontal ) {
-    painter.drawText( x - tw / 2, (h + th) / 2, text );
+    painter.drawText( QPointF(lx - tw / 2, (h + th) / 2), text );
   } else {
-    painter.drawText( (w - tw) / 2, x + th / 2, text );
+    painter.drawText( QPointF((w - tw) / 2, lx + th / 2), text );
   }
 }
 
 void KLineal::drawScaleTick( QPainter &painter, int x, int len )
 {
   painter.setOpacity( TICK_OPACITY );
-  int w = width();
-  int h = height();
+  qreal w = width();
+  qreal h = height();
   // Offset by one because we are measuring lengths, not positions, so when the
   // indicator is at position 0 it measures a length of 1 pixel.
   if ( mLeftToRight ) {
@@ -816,12 +733,16 @@ void KLineal::drawScaleTick( QPainter &painter, int x, int len )
   } else {
     ++x;
   }
+
+  // The value is in physical coords, but Qt is drawing in logical coords.
+  qreal lx = x / pixelRatio();
+
   if ( mHorizontal ) {
-    painter.drawLine( x, 0, x, len );
-    painter.drawLine( x, h, x, h - len );
+    painter.drawLine( QLineF(lx, 0, lx, len) );
+    painter.drawLine( QLineF(lx, h, lx, h - len) );
   } else {
-    painter.drawLine( 0, x, len, x );
-    painter.drawLine( w, x, w - len, x );
+    painter.drawLine( QLineF(0, lx, len, lx) );
+    painter.drawLine( QLineF(w, lx, w - len, lx) );
   }
   painter.setOpacity( 1 );
 }
@@ -928,7 +849,7 @@ void KLineal::paintEvent(QPaintEvent *inEvent )
 
   drawResizeHandle( painter, mHorizontal ? Qt::LeftEdge : Qt::TopEdge );
   drawResizeHandle( painter, mHorizontal ? Qt::RightEdge : Qt::BottomEdge );
-  if ( underMouse() && !isResizing() ) {
+  if ( underMouse() ) {
     int xy = mHorizontal ? localCursorPos().x() : localCursorPos().y();
     drawIndicatorOverlay( painter, xy );
     drawIndicatorText( painter, xy );

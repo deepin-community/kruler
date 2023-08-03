@@ -1,18 +1,9 @@
-/***************************************************************************
-                          main.cpp  -  description
-                             -------------------
-    Copyright            : (C) 2000 - 2008 by Till Krech <till@snafu.de>
-                           (C) 2009        by Mathias Soeken <msoeken@tzi.de>
- ***************************************************************************/
+/*
+    SPDX-FileCopyrightText: 2000-2008 Till Krech <till@snafu.de>
+    SPDX-FileCopyrightText: 2009 Mathias Soeken <msoeken@tzi.de>
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
+    SPDX-License-Identifier: GPL-2.0-or-later
+*/
 
 #include <QApplication>
 
@@ -27,12 +18,16 @@
 
 int main(int argc, char *argv[])
 {
-  QApplication a( argc, argv );
-  a.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+  QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+#endif
+  QApplication app( argc, argv );
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
   Kdelibs4ConfigMigrator migrate(QStringLiteral("kruler"));
   migrate.setConfigFiles(QStringList() << QStringLiteral("krulerrc") << QStringLiteral("kruler.notifyrc"));
   migrate.setUiFiles(QStringList() << QStringLiteral("krulerui.rc"));
   migrate.migrate();
+#endif
 
   KAboutData aboutData( QStringLiteral("kruler"), i18n( "KDE Screen Ruler" ),
     QStringLiteral(KRULER_VERSION_STRING),
@@ -47,13 +42,10 @@ int main(int argc, char *argv[])
 
   QCommandLineParser parser;
   aboutData.setupCommandLine(&parser);
-  parser.process(a);
+  parser.process(app);
   aboutData.processCommandLine(&parser);
 
-
-  KLineal *ruler = new KLineal();
-  ruler->show();
-  int ret = a.exec();
-  delete ruler;
-  return ret;
+  KLineal ruler;
+  ruler.show();
+  return app.exec();
 }

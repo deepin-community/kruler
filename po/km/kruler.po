@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kruler\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-30 00:15+0000\n"
+"POT-Creation-Date: 2022-08-27 00:44+0000\n"
 "PO-Revision-Date: 2010-11-26 11:10+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -16,23 +16,8 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km-KH\n"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:23
-#, kde-format
-msgid ""
-"If this option is enabled, the window is being moved using the operations "
-"from the window manager."
-msgstr ""
-"ប្រសិនបើ​​​បើក​ជម្រើស​នេះ បង្អួច​ដែល​កំពុង​ត្រូវ​បាន​ផ្លាស់ទី​ ដោយ​ប្រើ​សញ្ញា​ប្រមាណវិធី​​ពី​កម្មវិធី​គ្រប់គ្រង​បង្អួច ។"
-
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_NativeMoving)
-#: cfg_advanced.ui:26
-#, kde-format
-msgid "Native moving"
-msgstr "ការ​ផ្លាស់ទី​ដើម"
-
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:33
+#: cfg_advanced.ui:23
 #, fuzzy, kde-format
 #| msgid ""
 #| "If this option is enabled, the window is being moved using the operations "
@@ -43,7 +28,7 @@ msgstr ""
 "ប្រសិនបើ​​​បើក​ជម្រើស​នេះ បង្អួច​ដែល​កំពុង​ត្រូវ​បាន​ផ្លាស់ទី​ ដោយ​ប្រើ​សញ្ញា​ប្រមាណវិធី​​ពី​កម្មវិធី​គ្រប់គ្រង​បង្អួច ។"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AlwaysOnTop)
-#: cfg_advanced.ui:36
+#: cfg_advanced.ui:26
 #, kde-format
 msgid "Always on top"
 msgstr ""
@@ -94,7 +79,7 @@ msgstr ""
 msgid "&Scale"
 msgstr "មាត្រដ្ឋាន"
 
-#: klineal.cpp:124 klineal.cpp:346
+#: klineal.cpp:124 klineal.cpp:347
 #, kde-format
 msgid "Right to Left"
 msgstr "ស្ដាំ​ទៅ​ឆ្វេង"
@@ -119,48 +104,48 @@ msgstr "ភាគរយ"
 msgid "O&pacity"
 msgstr "ស្រអាប់"
 
-#: klineal.cpp:346
+#: klineal.cpp:347
 #, kde-format
 msgid "Left to Right"
 msgstr "ឆ្វេង​ទៅ​ស្ដាំ"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Bottom to Top"
 msgstr "ពី​បាត​ទៅ​កំពូល"
 
-#: klineal.cpp:348
+#: klineal.cpp:349
 #, kde-format
 msgid "Top to Bottom"
 msgstr "ពីកំពូល​ទៅបាត"
 
-#: klineal.cpp:393
+#: klineal.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Scale Offset"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​អុហ្វសិត"
 
-#: klineal.cpp:394
+#: klineal.cpp:395
 #, kde-format
 msgid "Offset:"
 msgstr "អុហ្វសិត ៖"
 
-#: klineal.cpp:428
+#: klineal.cpp:425
 #, kde-format
 msgid "Appearance"
 msgstr "រូបរាង"
 
-#: klineal.cpp:436
+#: klineal.cpp:433
 #, kde-format
 msgid "Advanced"
 msgstr "កម្រិតខ្ពស់"
 
-#: klineal.cpp:530
+#: klineal.cpp:529
 #, kde-format
 msgid "%1 px"
 msgstr ""
 
-#: klineal.cpp:537
+#: klineal.cpp:536
 #, kde-format
 msgid "%1%"
 msgstr ""
@@ -219,30 +204,24 @@ msgstr "ជា​រូបតំណាង​​ដែល​បានប្រើ
 msgid "Opacity of the window"
 msgstr "ភាព​ស្រអាប់​របស់បង្អួច"
 
-#. i18n: ectx: label, entry (NativeMoving), group (StoredSettings)
-#: kruler.kcfg:47
-#, kde-format
-msgid "Is native moving (possibly wobbling windows) active"
-msgstr "ជា​ការ​ផ្លាស់ទី​ដើម (បង្អួច​អាច​យួល​) សកម្ម"
-
 #. i18n: ectx: label, entry (AlwaysOnTop), group (StoredSettings)
-#: kruler.kcfg:51
+#: kruler.kcfg:47
 #, kde-format
 msgid "Is always on top"
 msgstr ""
 
-#: krulersystemtray.cpp:28 main.cpp:37
+#: krulersystemtray.cpp:19 main.cpp:32
 #, kde-format
 msgid "KDE Screen Ruler"
 msgstr "បន្ទាត់​អេក្រង់ KDE"
 
-#: main.cpp:39
+#: main.cpp:34
 #, fuzzy, kde-format
 #| msgid "A screen ruler for KDE"
 msgid "A screen ruler by KDE"
 msgstr "បន្ទាត់​អេក្រង់​សម្រាប់ KDE"
 
-#: main.cpp:41
+#: main.cpp:36
 #, kde-format
 msgid ""
 "(c) 2000 - 2008, Till Krech\n"
@@ -251,47 +230,60 @@ msgstr ""
 "រក្សាសិទ្ធិថ​ឆ្នាំ ២០០០ - ២០០៨ ដោយ Till Krech\n"
 "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៩ ដោយ Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Mathias Soeken"
 msgstr "Mathias Soeken"
 
-#: main.cpp:42
+#: main.cpp:37
 #, kde-format
 msgid "Maintainer"
 msgstr "អ្នក​ថែទាំ"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Till Krech"
 msgstr "Till Krech"
 
-#: main.cpp:43
+#: main.cpp:38
 #, kde-format
 msgid "Former Maintainer and Developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍ និង​ថែទាំ​ពី​មុន​"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Gunnstein Lye"
 msgstr "Gunnstein Lye"
 
-#: main.cpp:44
+#: main.cpp:39
 #, kde-format
 msgid "Initial port to KDE 2"
 msgstr "ច្រក​ដំបូង​ទៅកាន់ KDE 2"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, ​អេង វណ្ណៈ, អោក ពិសិដ្ឋ​"
 
-#: main.cpp:45
+#: main.cpp:40
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​evannak@khmeros.info,piseth_dv@khmeros.info"
+
+#~ msgid ""
+#~ "If this option is enabled, the window is being moved using the operations "
+#~ "from the window manager."
+#~ msgstr ""
+#~ "ប្រសិនបើ​​​បើក​ជម្រើស​នេះ បង្អួច​ដែល​កំពុង​ត្រូវ​បាន​ផ្លាស់ទី​ ដោយ​ប្រើ​សញ្ញា​ប្រមាណវិធី​​ពី​កម្មវិធី​គ្រប់គ្រង​"
+#~ "បង្អួច ។"
+
+#~ msgid "Native moving"
+#~ msgstr "ការ​ផ្លាស់ទី​ដើម"
+
+#~ msgid "Is native moving (possibly wobbling windows) active"
+#~ msgstr "ជា​ការ​ផ្លាស់ទី​ដើម (បង្អួច​អាច​យួល​) សកម្ម"
 
 #~ msgid "KRuler"
 #~ msgstr "KRuler"

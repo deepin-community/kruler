@@ -146,7 +146,7 @@
 </term>
 <listitem>
 <para
->Aquesta opció us permet establir l'escala <guilabel
+>Aquesta opció us permet establir l'escala del regle <guilabel
 >De dreta a esquerra</guilabel
 > (<keycap
 >D</keycap
@@ -293,7 +293,7 @@
 >Podeu moure el cursor del ratolí i d'aquesta manera l'indicador, mantenint premuda la tecla &Alt; i utilitzant els botons de fletxa.</para>
 
 <para
->Mantingueu premuda la tecla &Maj; per a fer que es mogui més ràpid.</para>
+>Mantingueu premuda la tecla &Maj; per a fer que es mogui més de pressa.</para>
 </chapter>
 
 <chapter id="credits-and-license">
